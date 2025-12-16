@@ -4,9 +4,9 @@
    ============================================ */
 :root {
     /* Primary Colors - Orange Theme */
-    --primary: #ff6b35;
-    --primary-dark: #d94a1a;
-    --primary-light: #ff8c5f;
+    --primary: #F0565A;
+    --primary-dark: #d94242;
+    --primary-light: #f47679;
     /* Light Mode Colors (Default) */
     --bg-dark: #ffffff;
     --bg-darker: #f8f9fa;
@@ -18,7 +18,7 @@
     --text-muted: #adb5bd;
     /* Accent Colors */
     --accent-1: #ff006e;
-    --accent-2: #ff6b35;
+    --accent-2: #F0565A;
     --accent-3: #fb5607;
     /* Borders for Light Mode */
     --border-color: #dee2e6;
@@ -51,9 +51,9 @@ body {
 /* Dark Mode Theme */
 body.dark-theme {
     /* Primary Colors - Orange Theme */
-    --primary: #ff6b35;
-    --primary-dark: #d94a1a;
-    --primary-light: #ff8c5f;
+    --primary: #F0565A;
+    --primary-dark: #d94242;
+    --primary-light: #f47679;
     /* Dark Mode Colors */
     --bg-dark: #0f0f1e;
     --bg-darker: #0a0a14;
@@ -80,9 +80,9 @@ body {
 /* Dark Mode Theme */
 body.dark-theme {
     /* Primary Colors - Orange Theme */
-    --primary: #ff6b35;
-    --primary-dark: #d94a1a;
-    --primary-light: #ff8c5f;
+    --primary: #F0565A;
+    --primary-dark: #d94242;
+    --primary-light: #f47679;
 
     /* Dark Mode Colors */
     --bg-dark: #0f0f1e;
@@ -694,8 +694,12 @@ body:not(.dark-theme) .code-parameter {
 
 /* Gradient Primary Section */
 .bg-gradient-primary {
-    background: linear-gradient(135deg, var(--primary) 0%, var(--accent-2) 100%);
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23000' stroke-width='66.7' stroke-opacity='0.05' %3E%3Ccircle fill='%23ff9d00' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23fb8d17' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23f47d24' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23ed6e2d' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23e35f34' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23d85239' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23cc453e' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23be3941' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23b02f43' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23a02644' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23901e44' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23801843' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%236f1341' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%235e0f3d' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%234e0c38' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%233e0933' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%232e062c' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23210024' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: cover;
     position: relative;
+    background-color: #F0565A;
+    background-attachment: fixed;
 }
 
 .bg-gradient-primary::before {
@@ -892,7 +896,7 @@ footer a:hover {
 
 /* Primary Glow Effect */
 .primary-glow {
-    box-shadow: 0 0 20px rgba(255, 107, 53, 0.3);
+    box-shadow: 0 0 20px rgba(240, 86, 90, 0.3);
 }
 
 /* Transitions */
@@ -911,7 +915,7 @@ footer a:hover {
     background: var(--primary);
     color: white;
     border: none;
-    box-shadow: 0 4px 20px rgba(255, 107, 53, 0.3);
+    box-shadow: 0 4px 20px rgba(240, 86, 90, 0.3);
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -923,7 +927,7 @@ footer a:hover {
 
 .theme-toggle:hover {
     transform: scale(1.1);
-    box-shadow: 0 6px 25px rgba(255, 107, 53, 0.4);
+    box-shadow: 0 6px 25px rgba(240, 86, 90, 0.4);
 }
 
 .theme-toggle:active {
@@ -937,7 +941,7 @@ footer a:hover {
 .dark-theme .theme-toggle {
     background: var(--bg-card);
     color: var(--primary);
-    box-shadow: 0 4px 20px rgba(255, 107, 53, 0.2);
+    box-shadow: 0 4px 20px rgba(240, 86, 90, 0.2);
 }
 
 @media (max-width: 768px) {
